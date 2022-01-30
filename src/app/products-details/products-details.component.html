@@ -1,0 +1,59 @@
+<!-- <table mat-table  [dataSource]="dataSource" matSort class=" mat-elevation-z8">
+    
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef> {{product.name}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef> Price </th>
+      <td mat-cell *matCellDef> {{product.price}} € </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="image">
+      <th mat-header-cell *matHeaderCellDef> Image </th>
+      <td mat-cell *matCellDef><img width="200px" src={{product.image}}></td>
+    </ng-container>
+  
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> Description </th>
+      <td mat-cell *matCellDef> {{product.description}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="options">
+        <th mat-header-cell *matHeaderCellDef>Options</th>
+        <td mat-cell *matCellDef>
+          <a mat-raised-button color="primary" [routerLink]="['/products']">
+            Back
+          </a>
+        </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+  </table> -->
+
+<div class="phone-card">
+
+  <h1 class="name">{{ product.name }}</h1>
+
+  <div class="image">
+      <img src="{{ product.image }}" alt="">
+  </div>
+  <br>
+  <div class="price">
+      Price: {{ product.price }} €
+  </div>
+  <br>
+  <div class="description">
+      Description: {{ product.description }}
+  </div>
+  <br>
+  <div>
+    <a mat-raised-button color="primary" [routerLink]="['/products']">
+      Back
+    </a>
+  </div>
+
+</div>

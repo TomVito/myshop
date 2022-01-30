@@ -1,0 +1,29 @@
+.navigator {
+    display: flex;
+    li {
+      list-style: none;
+      margin: 10px;
+    }
+    a {
+      color: black;
+      font-size: 18px;
+      margin: 5px;
+      background-color: white;
+    }
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-icon {
+    margin-right: 20px;
+  }
+
+  .img-logo {
+    margin-right: 30px;
+  }
+
+  .mat-toolbar {
+    background-color: rgb(209, 107, 82);
+  }

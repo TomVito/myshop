@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <img class="img-logo"
+      width="40"
+      alt="Angular Logo"
+      src="../assets/img/logo.png"
+    />
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My Shop</span>
+    <span class="example-spacer"></span>
+    <ul class="navigator">
+      <li>
+        <a routerLink="/products" mat-button routerLinkActive="active">Products</a>
+        <a routerLink="/contacts" mat-button routerLinkActive="active">Contacts</a>
+        <a routerLink="/about" mat-button routerLinkActive="active">About Us</a>
+      </li>
+    </ul>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
